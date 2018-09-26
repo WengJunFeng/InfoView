@@ -12,3 +12,14 @@ When I moved from 16 bit Windows Operating System to a 32 bit Windows Operating 
 I wanted to write a program, where I can still have some sort of communication across processes, where I can retrieve the value of a text box from another process space. The only way I could do it is by injecting a Dynamically Linked Library (DLL) into other process memory, and establish inter-process communication using that common DLL. Most of the password stealer programs, keyboard hijacking programs do this exact thing! And yes, you can view passwords of another process using this application, and even capture keyboard messages too.
 
 The code comes with no warranty, use it at your risk! This was written when my understanding of C++ was very weak, and if you find problems, I am not planning on updating or changing it.
+
+## Screenshots
+
+![Windows View](https://raw.githubusercontent.com/skalavala/InfoView/master/images/screen-1.jpg "Running Apps/Windows")
+
+![Process View](https://raw.githubusercontent.com/skalavala/InfoView/master/images/screen-2.jpg "Running Processes View")
+
+![Extra Details](https://raw.githubusercontent.com/skalavala/InfoView/master/images/screen-3.jpg "Additional Windows Details")
+
+![Capture Messages](https://raw.githubusercontent.com/skalavala/InfoView/master/images/screen-4.jpg "Messages View")
+
