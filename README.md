@@ -1,6 +1,6 @@
 # InfoView
 
-This is a Microsoft Windows utility/tool I wrote back in the days when C++ and VC++ were hot. The front-end is built using VC++/MFC, and there is a statically linked DLL written in C language. The C library uses Windows SDK (which is now upgraded to WINSDK version 10), and the rest remains in Visual C++/MFC.
+This is a Microsoft Windows utility/tool I wrote back in the days when C++ and VC++ were hot. The front-end is built using VC++/MFC, and there is a DLL that the app uses, and it is written in C language. The C library uses Windows SDK (which is now upgraded to WINSDK version 10), and the rest remains in Visual C++/MFC.
 
 ## What does this program do?
 
