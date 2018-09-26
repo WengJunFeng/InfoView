@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoHook", "INFOHOOK\InfoHook.vcproj", "{6E387253-72FE-452A-9605-FCFF1DFFFF30}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoView", "InfoView.vcproj", "{A660DADF-E027-499A-9AA0-7D29F0F56DB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{A660DADF-E027-499A-9AA0-7D29F0F56DB7}.0 = {6E387253-72FE-452A-9605-FCFF1DFFFF30}
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{6E387253-72FE-452A-9605-FCFF1DFFFF30}.Debug.ActiveCfg = Debug|Win32
+		{6E387253-72FE-452A-9605-FCFF1DFFFF30}.Debug.Build.0 = Debug|Win32
+		{6E387253-72FE-452A-9605-FCFF1DFFFF30}.Release.ActiveCfg = Release|Win32
+		{6E387253-72FE-452A-9605-FCFF1DFFFF30}.Release.Build.0 = Release|Win32
+		{A660DADF-E027-499A-9AA0-7D29F0F56DB7}.Debug.ActiveCfg = Debug|Win32
+		{A660DADF-E027-499A-9AA0-7D29F0F56DB7}.Debug.Build.0 = Debug|Win32
+		{A660DADF-E027-499A-9AA0-7D29F0F56DB7}.Release.ActiveCfg = Release|Win32
+		{A660DADF-E027-499A-9AA0-7D29F0F56DB7}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

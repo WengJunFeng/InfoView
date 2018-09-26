@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A660DADF-E027-499A-9AA0-7D29F0F56DB7}</ProjectGuid>
+    <RootNamespace>InfoView</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27924.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/InfoView.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/InfoView.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>pdh.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Debug/InfoView.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/InfoView.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/InfoView.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/InfoView.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_AFXDLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>pdh.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Release/InfoView.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release/InfoView.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="3DTEXT.CPP" />
+    <ClCompile Include="95Processes.cpp" />
+    <ClCompile Include="95ProcessPage.cpp" />
+    <ClCompile Include="AboutInfoViewer.cpp" />
+    <ClCompile Include="ButtonSubClass.cpp" />
+    <ClCompile Include="CFlatBar.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ClassPage.cpp" />
+    <ClCompile Include="DialogEx.cpp" />
+    <ClCompile Include="DLLListDlg.cpp" />
+    <ClCompile Include="DllListSizer.cpp" />
+    <ClCompile Include="ExplorerWnd.cpp" />
+    <ClCompile Include="FindTxtDialog.cpp" />
+    <ClCompile Include="FindWindow.cpp" />
+    <ClCompile Include="GeneralPage.cpp" />
+    <ClCompile Include="InfoUtil.cpp" />
+    <ClCompile Include="InfoView.cpp" />
+    <ClCompile Include="InfoViewDoc.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MessagesView.cpp" />
+    <ClCompile Include="MsgOptionsDlg.cpp" />
+    <ClCompile Include="MyEditCtrl.cpp" />
+    <ClCompile Include="MyListCtrl.cpp" />
+    <ClCompile Include="NTProcesses.cpp" />
+    <ClCompile Include="NTProcessPage.cpp" />
+    <ClCompile Include="PdhUtil.cpp" />
+    <ClCompile Include="ProcessesView.cpp" />
+    <ClCompile Include="ProcessInfoDlg.cpp" />
+    <ClCompile Include="ProcessMemInfo.cpp" />
+    <ClCompile Include="ProcessPropView.cpp" />
+    <ClCompile Include="ProcessTreeView.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="Sizer.cpp" />
+    <ClCompile Include="SplashDialog.cpp" />
+    <ClCompile Include="StaticEx.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StylesPage.cpp" />
+    <ClCompile Include="TabSheet.cpp" />
+    <ClCompile Include="ThreadPropView.cpp" />
+    <ClCompile Include="ThreadsListView.cpp" />
+    <ClCompile Include="WindowInfo.cpp" />
+    <ClCompile Include="WindowsPage.cpp" />
+    <ClCompile Include="WindowsView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3DTEXT.H" />
+    <ClInclude Include="95Processes.h" />
+    <ClInclude Include="95ProcessPage.h" />
+    <ClInclude Include="AboutInfoViewer.h" />
+    <ClInclude Include="ButtonSubClass.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="DialogEx.h" />
+    <ClInclude Include="DLLListDlg.h" />
+    <ClInclude Include="DllListSizer.h" />
+    <ClInclude Include="EnumProcess.h" />
+    <ClInclude Include="ExplorerWnd.h" />
+    <ClInclude Include="FindWindow.h" />
+    <ClInclude Include="InfoUtil.h" />
+    <ClInclude Include="InfoView.h" />
+    <ClInclude Include="InfoViewDoc.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MyEditCtrl.h" />
+    <ClInclude Include="MyListCtrl.h" />
+    <ClInclude Include="NTProcesses.h" />
+    <ClInclude Include="NTProcessPage.h" />
+    <ClInclude Include="PdhUtil.h" />
+    <ClInclude Include="ProcessesView.h" />
+    <ClInclude Include="ProcessInfoDlg.h" />
+    <ClInclude Include="ProcessMemInfo.h" />
+    <ClInclude Include="ProcessPropView.h" />
+    <ClInclude Include="ProcessTreeView.h" />
+    <ClInclude Include="Psapi.h" />
+    <ClInclude Include="Registry.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Sizer.h" />
+    <ClInclude Include="SplashDialog.h" />
+    <ClInclude Include="StaticEx.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="ThreadPropView.h" />
+    <ClInclude Include="ThreadsListView.h" />
+    <ClInclude Include="Tree.h" />
+    <ClInclude Include="WindowsView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\bitmap1.bmp" />
+    <Image Include="Res\classes.ico" />
+    <Image Include="res\Clsdfold.ico" />
+    <Image Include="Res\dllicon.ico" />
+    <Image Include="res\Frame.ico" />
+    <Image Include="res\FrameCircle.ico" />
+    <Image Include="Res\general.ico" />
+    <Image Include="res\InfoView.ico" />
+    <Image Include="res\InfoViewDoc.ico" />
+    <Image Include="res\Openfold.ico" />
+    <Image Include="Res\processes.ico" />
+    <Image Include="Res\splash.bmp" />
+    <Image Include="Res\styles.ico" />
+    <Image Include="res\ninja.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="Res\windows.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InfoHook\Debug\InfoHook.dll" />
+    <None Include="res\Circle.cur" />
+    <None Include="Res\hand.cur" />
+    <None Include="res\InfoView.rc2" />
+    <None Include="VTune\InfoView.vpj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="InfoView.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="InfoHook\Debug\InfoHook.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="InfoHook\InfoHook.vcxproj">
+      <Project>{6e387253-72fe-452a-9605-fcff1dffff30}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="InfoView.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

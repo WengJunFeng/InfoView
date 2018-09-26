@@ -1,0 +1,96 @@
+--------------------Configuration: InfoHook - Win32 Release--------------------
+Begining build with project "C:\SOURCE\INFOVIEW\INFOHOOK\InfoHook.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"Release/InfoHook.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "NDEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /d "NDEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Release/InfoHook.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/InfoHook.pdb" /machine:I386 /def:".\HHook.def" /out:"Release/InfoHook.dll" /implib:"Release/InfoHook.lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\WINDOWS\TEMP\RSPE294.TMP" with contents </nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"Release/InfoHook.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\SOURCE\INFOVIEW\INFOHOOK\HHook.c"
+>
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPE294.TMP" 
+Creating temp file "C:\WINDOWS\TEMP\RSPE295.TMP" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/InfoHook.pdb" /machine:I386 /def:".\HHook.def" /out:"Release/InfoHook.dll" /implib:"Release/InfoHook.lib" 
+.\Release\HHook.obj>
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPE295.TMP" 
+Compiling...
+HHook.c
+Linking...
+   Creating library Release/InfoHook.lib and object Release/InfoHook.exp
+
+
+
+InfoHook.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: InfoHook - Win32 Debug--------------------
+Begining build with project "C:\SOURCE\INFOVIEW\INFOHOOK\InfoHook.dsp", at root.
+Active configuration is Win32 (x86) Dynamic-Link Library (based on Win32 (x86) Dynamic-Link Library)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MTd /W4 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/InfoHook.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/InfoHook.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/InfoHook.pdb" /debug /machine:I386 /def:".\HHook.def" /out:"Debug/InfoHook.dll" /implib:"Debug/InfoHook.lib" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\WINDOWS\TEMP\RSPE3A4.TMP" with contents </nologo /MTd /W4 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fp"Debug/InfoHook.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\SOURCE\INFOVIEW\INFOHOOK\HHook.c"
+>
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPE3A4.TMP" 
+Creating temp file "C:\WINDOWS\TEMP\RSPE3A5.TMP" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/InfoHook.pdb" /debug /machine:I386 /def:".\HHook.def" /out:"Debug/InfoHook.dll" /implib:"Debug/InfoHook.lib" /pdbtype:sept 
+.\Debug\HHook.obj>
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPE3A5.TMP" 
+Compiling...
+HHook.c
+C:\SOURCE\INFOVIEW\INFOHOOK\HHook.c(97) : warning C4100: 'lpNot' : unreferenced formal parameter
+C:\SOURCE\INFOVIEW\INFOHOOK\HHook.c(177) : warning C4057: 'function' : 'int (__stdcall *)(void)' differs in indirection to slightly different base types from 'long (__stdcall *)(int ,unsigned int ,long )'
+C:\SOURCE\INFOVIEW\INFOHOOK\HHook.c(200) : warning C4057: 'function' : 'int (__stdcall *)(void)' differs in indirection to slightly different base types from 'long (__stdcall *)(int ,unsigned int ,long )'
+C:\SOURCE\INFOVIEW\INFOHOOK\HHook.c(223) : warning C4057: 'function' : 'int (__stdcall *)(void)' differs in indirection to slightly different base types from 'long (__stdcall *)(int ,unsigned int ,long )'
+C:\SOURCE\INFOVIEW\INFOHOOK\HHook.c(411) : warning C4057: 'function' : 'int (__stdcall *)(void)' differs in indirection to slightly different base types from 'long (__stdcall *)(int ,unsigned int ,long )'
+C:\SOURCE\INFOVIEW\INFOHOOK\HHook.c(412) : warning C4057: 'function' : 'int (__stdcall *)(void)' differs in indirection to slightly different base types from 'long (__stdcall *)(int ,unsigned int ,long )'
+C:\SOURCE\INFOVIEW\INFOHOOK\HHook.c(413) : warning C4057: 'function' : 'int (__stdcall *)(void)' differs in indirection to slightly different base types from 'long (__stdcall *)(int ,unsigned int ,long )'
+Linking...
+
+
+
+InfoHook.dll - 0 error(s), 7 warning(s)
+--------------------Configuration: InfoView - Win32 Release--------------------
+Begining build with project "C:\SOURCE\INFOVIEW\InfoView.dsp", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MD /W3 /GX /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/InfoView.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "NDEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x411 /fo"Release/InfoView.res" /d "NDEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"Release/InfoView.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /incremental:no /pdb:"Release/InfoView.pdb" /machine:I386 /out:"Release/InfoView.exe" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+
+
+
+InfoView.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: InfoView - Win32 Debug--------------------
+Begining build with project "C:\SOURCE\INFOVIEW\InfoView.dsp", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W4 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/InfoView.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x411 /fo"Debug/InfoView.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/InfoView.bsc" "
+			"COFF Linker for 80x86" with flags "/nologo /subsystem:windows /incremental:yes /pdb:"Debug/InfoView.pdb" /debug /machine:I386 /out:"Debug/InfoView.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+
+
+
+InfoView.exe - 0 error(s), 0 warning(s)

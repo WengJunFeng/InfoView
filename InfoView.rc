@@ -1,0 +1,1168 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\InfoView.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\InfoView.ico"
+IDI_WINDOWS             ICON                    "res\\windows.ico"
+IDI_STYLES              ICON                    "res\\styles.ico"
+IDI_OPEN_FOLDER         ICON                    "res\\Openfold.ico"
+IDI_GENERAL             ICON                    "res\\general.ico"
+IDI_CLOSE_FOLDER        ICON                    "res\\Clsdfold.ico"
+IDI_CLASSES             ICON                    "res\\classes.ico"
+IDI_PROCESSES           ICON                    "res\\processes.ico"
+IDR_INFOVITYPE          ICON                    "res\\InfoViewDoc.ico"
+IDI_FRAME_CIRCLE        ICON                    "res\\FrameCircle.ico"
+IDI_FRAME               ICON                    "res\\Frame.ico"
+IDI_DLLICON             ICON                    "Res\\dllicon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_WINDOWS_POPUPMENU MENU 
+BEGIN
+    POPUP "WindowsView"
+    BEGIN
+        MENUITEM "H&ide",                       ID_HIDE_WINDOW
+        MENUITEM "Ena&ble",                     ID_ENABLE_WINDOW
+        MENUITEM "Clos&e",                      ID_CLOSE_WINDOW
+        MENUITEM SEPARATOR
+        POPUP "&Show"
+        BEGIN
+            MENUITEM "&Process Info",               IDM_SHOW_PROCESS_ID
+            MENUITEM "&Thread Info",                IDM_SHOW_THREAD_ID
+            MENUITEM "&Class Name",                 IDM_SHOW_CLASSNAME, CHECKED
+            MENUITEM "Window Title",                ID_SHOW_WINDOWCAPTION, CHECKED
+        END
+        POPUP "&Copy to ClipBoard"
+        BEGIN
+            MENUITEM "&Entire Text",                ID_COPY_ENTIRETEXT
+            MENUITEM "Class &Name",                 ID_COPY_CLASSNAME
+            MENUITEM "Window &Title",               ID_COPY_WINDOWTEXT
+            MENUITEM "Window &Handle",              ID_COPY_HWND
+        END
+        MENUITEM "Show Hidden &Windows",        ID_SHOW_SHOWHIDDENWINDOWS, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "&Highlight\tCtrl+H",          IDM_HIGHLIGHT
+        MENUITEM "&Find Window...\tCtrl+F",     IDM_FIND_WINDOW
+        MENUITEM "&Get Text ...\tCtrl+G",       IDM_GET_TEXT
+        MENUITEM "&Properties...",              IDM_SHOWPROPERTIES
+    END
+    POPUP "Spy"
+    BEGIN
+        MENUITEM "&Show",                       IDM_SPY_SHOW
+        MENUITEM "&About...",                   IDD_ABOUTINFOVIEWER
+        MENUITEM SEPARATOR
+        MENUITEM "&Quit",                       IDM_FILE_QUIT
+    END
+END
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Windows...\tCtrl+N",         IDM_FILE_NEW_WINDOWS_VIEW
+        MENUITEM "&Messages...\tCtrl+M",        IDM_FILE_NEW_MESSAGES_VIEW
+        MENUITEM "Proce&sse Explorer\tCtrl+E",  IDM_FILE_NEW_PROCESSES_TREE
+        MENUITEM "&Processes && DLLs ...\tCtrl+R", IDM_FILE_NEW_PROCESSES_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Quit\tAlt+X",                IDM_FILE_QUIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Dependencies",               32797
+        MENUITEM "&Copy Window to Clipboard",   IDM_COPYWINDOWTOCLIPBOARD
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   IDD_ABOUTINFOVIEWER
+    END
+END
+
+IDR_INFOVITYPE MENU 
+BEGIN
+    POPUP "&Show"
+    BEGIN
+        MENUITEM "&Windows...\tCtrl+N",         IDM_FILE_NEW_WINDOWS_VIEW
+        MENUITEM "&Messages...\tCtrl+M",        IDM_FILE_NEW_MESSAGES_VIEW
+        MENUITEM "Process Explorer\tCtrl+E",    IDM_FILE_NEW_PROCESSES_TREE
+        MENUITEM "&Processes && DLLs...\tCtrl+R", IDM_FILE_NEW_PROCESSES_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Get Text...\tCtrl+G",        IDM_GET_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties...\tCtrl+P",      IDM_SHOWPROPERTIES
+        MENUITEM "&HighLight\tCtrl+H",          IDM_HIGHLIGHT
+        MENUITEM "&FindWindow...\tCtrl+F",      IDM_FIND_WINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "&Quit\tAlt+X",                IDM_FILE_QUIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        POPUP "S&how"
+        BEGIN
+            MENUITEM "&Process ID",                 IDM_SHOW_PROCESS_ID
+            MENUITEM "&Thread ID",                  IDM_SHOW_THREAD_ID
+            MENUITEM "&Class Name",                 IDM_SHOW_CLASSNAME, CHECKED
+            MENUITEM "Window Caption",              ID_SHOW_WINDOWCAPTION, CHECKED
+        END
+        POPUP "&Copy to ClipBoard"
+        BEGIN
+            MENUITEM "&Entire Text",                ID_COPY_ENTIRETEXT
+            MENUITEM "Class &Name",                 ID_COPY_CLASSNAME
+            MENUITEM "Window &Text",                ID_COPY_WINDOWTEXT
+            MENUITEM "HWND (Handle)",               ID_COPY_HWND
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Find Text...\tF3",           IDM_FIND_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Clear\tDel",                 IDM_CLEAR_VIEW
+        MENUITEM "&Refresh\tF5",                IDM_REFRESH
+        MENUITEM "&Properties",                 IDM_SHOWPROPERTIES
+        MENUITEM SEPARATOR
+        POPUP "W&indow"
+        BEGIN
+            MENUITEM "H&ide",                       166
+            MENUITEM "Clos&e",                      168
+            MENUITEM "Ena&ble",                     167
+        END
+        MENUITEM "&Dependencies",               IDM_SHOW_DLLS
+        MENUITEM "Show Hidden &Windows",        165, CHECKED
+    END
+    POPUP "&Window"
+    BEGIN
+        POPUP "&New Window"
+        BEGIN
+            MENUITEM "&Windows...\tCtrl+N",         IDM_FILE_NEW_WINDOWS_VIEW
+            MENUITEM "&Messages...\tCtrl+M",        IDM_FILE_NEW_MESSAGES_VIEW
+            MENUITEM "Processes && Threads...\tCtrl+T", IDM_FILE_NEW_PROCESSES_TREE
+            MENUITEM "&Processes && DLLs...\tCtrl+R", IDM_FILE_NEW_PROCESSES_VIEW
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM "Close A&ll Windows",          32885
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   IDD_ABOUTINFOVIEWER
+    END
+END
+
+IDR_PROCESSES_POPUPMENU MENU 
+BEGIN
+    POPUP "P&rocesses"
+    BEGIN
+        MENUITEM "&Properties...",              IDM_SHOWPROPERTIES
+    END
+END
+
+IDR_MESSAGES_POPUPMENU MENU 
+BEGIN
+    POPUP "MessagesView"
+    BEGIN
+        MENUITEM "&Clear the view",             IDM_CLEAR_VIEW
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_95PROCESSES DIALOGEX 0, 0, 189, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Process Info"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Process ID:",IDC_STATIC_PROCESSID,18,15,58,14
+    LTEXT           "",IDC_PROCESS_ID,94,15,83,14
+    LTEXT           "Thread ID:",IDC_STATIC_THREADID,18,34,58,14
+    LTEXT           "",IDC_THREAD_ID,94,34,83,14
+    LTEXT           "Priority Base:",IDC_STATIC_THREADID3,18,53,58,14
+    LTEXT           "",IDC_PRIORITY_BASE,94,53,83,14
+    LTEXT           "Num Threads:",IDC_STATIC_NUM_THREADS,18,72,58,14
+    LTEXT           "",IDC_NUM_THREADS,94,72,83,14
+    LTEXT           "Parent PID:",IDC_STATIC_PARENT_PID,18,91,58,14
+    LTEXT           "",IDC_STATIC_PARENTPID,94,91,83,14
+    LTEXT           "Module Name:",IDC_STATIC_MODULENAME,18,114,58,14
+    EDITTEXT        IDC_MODUE_NAME,94,114,83,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "The selected window is either closed or invalid. Please make sure that the application is running.",IDC_INVALID_WINDOW,55,48,153,40,NOT WS_VISIBLE
+END
+
+IDD_FINDTEXT DIALOGEX 0, 0, 223, 89
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find Text"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_FIND_EDIT,52,5,163,16,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Find Next",IDC_FIND,165,48,50,14
+    CONTROL         "&Case",IDC_MATCH_CASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,37,50,8
+    CONTROL         "&Whole word",IDC_MATCH_WHOLEWORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,54,52,8
+    CONTROL         "&Up",IDC_RADIO_UP_DIR,"Button",BS_AUTORADIOBUTTON,98,36,33,10
+    CONTROL         "&Down",IDC_RADIO_DOWN_DIR,"Button",BS_AUTORADIOBUTTON,98,53,33,10
+    PUSHBUTTON      "Cancel",IDCANCEL,90,72,125,14
+    LTEXT           "Find What?",IDC_STATIC,9,9,40,8
+    GROUPBOX        "Match ",IDC_STATIC,6,25,67,41
+    GROUPBOX        "Direction ",IDC_STATIC,89,25,61,41
+    CONTROL         "Expand Tree",IDC_SUB_FOLDERS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,72,58,13
+    PUSHBUTTON      "&Mark All",IDC_MARKALL,165,30,50,14
+END
+
+IDD_WINDOWS DIALOGEX 0, 0, 189, 159
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Windows"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "&Hide window",IDC_HIDE_WINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,102,69,12
+    CONTROL         "&UnHide window",IDC_UNHIDE_WINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,119,70,12
+    CONTROL         "&Disable window",IDC_DISABLE_WINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,96,102,81,12
+    CONTROL         "&Close window",IDC_CLOSE_WINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,96,120,72,13
+    CONTROL         "&Reflect Selection in the Tree View",IDC_REFLECT_SELECTION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,135,146,15
+    RTEXT           "Next Window :",IDC_STATIC,13,49,62,11
+    LTEXT           "",IDC_NEXT_WINDOW,96,49,72,11
+    RTEXT           "Child Window :",IDC_STATIC,13,31,62,11
+    LTEXT           "",IDC_CHILD_WINDOW,96,31,72,11
+    RTEXT           "Parent Window :",IDC_STATIC,13,13,62,11
+    LTEXT           "",IDC_PARENT_WINDOW,96,13,72,11
+    RTEXT           "Owner Window :",IDC_STATIC,13,84,62,11
+    LTEXT           "",IDC_OWNER_WINDOW,96,83,72,11
+    RTEXT           "Prev Window :",IDC_STATIC,13,66,62,11
+    LTEXT           "",IDC_PREV_WINDOW,96,66,72,11
+    LTEXT           "The selected window is either closed or invalid. Please make sure that the application is running.",IDC_INVALID_WINDOW,55,48,153,40,NOT WS_VISIBLE
+END
+
+IDD_STYLES DIALOG  0, 0, 187, 125
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Styles"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Window styles:",IDC_STATIC,7,7,46,10
+    LISTBOX         IDC_STYLES,7,19,138,45,LBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_EX_STYLES,7,75,138,43,LBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Extended styles:",IDC_STATIC,7,65,51,8
+    LTEXT           "",IDC_STYLE_LONG,70,7,76,10
+    LTEXT           "",IDC_EX_STYLE_LONG,70,63,75,10
+    LTEXT           "The selected window is either closed or invalid. Please make sure that the application is running.",IDC_INVALID_WINDOW,55,48,153,40,NOT WS_VISIBLE
+END
+
+IDD_GENERAL DIALOGEX 0, 0, 197, 159
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Window Caption:",IDC_STATIC,7,7,58,11
+    LTEXT           "Window Handle:",IDC_STATIC,7,28,57,12
+    LTEXT           "Rectangle:",IDC_STATIC,7,59,57,11
+    LTEXT           "Restored Rect:",IDC_STATIC,7,73,57,11
+    LTEXT           "Client Rect:",IDC_STATIC,7,90,57,10
+    EDITTEXT        IDC_WND_CAPTION,72,7,114,12,ES_AUTOHSCROLL
+    LTEXT           "",IDC_WND_RECTANGLE,72,59,114,11
+    LTEXT           "",IDC_WND_RESTORED_RECT,72,73,114,11
+    LTEXT           "",IDC_WND_CLIENT_RECT,72,89,114,11
+    LTEXT           "Window Proc:",IDC_STATIC,7,46,57,11
+    LTEXT           "",IDC_WND_PROC,72,46,114,11
+    LTEXT           "Instance Handle:",IDC_STATIC,7,105,57,10
+    LTEXT           "",IDC_INSTANCE_HANDLE,72,104,114,11
+    LTEXT           "User Data:",IDC_STATIC,7,120,57,11
+    LTEXT           "",IDC_USER_DATA,72,120,114,11
+    LTEXT           "Control ID:",IDC_STATIC_CONTROL_ID,7,138,57,11
+    LTEXT           "",IDC_CONTROL_ID,72,138,114,11
+    EDITTEXT        IDC_WND_HANDLE,72,28,114,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "The selected window is either closed or invalid. Please make sure that the application is running.",IDC_INVALID_WINDOW,55,48,153,40,NOT WS_VISIBLE
+END
+
+IDD_CLASS DIALOGEX 0, 0, 218, 138
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Class"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Class Name:",IDC_STATIC,9,9,51,12
+    EDITTEXT        IDC_CLASS_NAME,66,9,143,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Class Styles:",IDC_STATIC,9,26,51,12
+    LTEXT           "",IDC_CLASS_STYLE,66,26,57,12
+    COMBOBOX        IDC_CLASS_STYLE_COMBO,129,24,79,112,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Menu Name:",IDC_STATIC,9,63,51,11
+    LTEXT           "Class Bytes:",IDC_STATIC,9,44,51,13
+    LTEXT           "",IDC_CLASS_BYTES,66,44,56,13
+    COMBOBOX        IDC_CLASS_BYTES_COMBO,129,44,79,90,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    LTEXT           "(Feature Not Implemented)",IDC_MENU_NAME,67,62,142,13
+    LTEXT           "Icon Handle:",IDC_STATIC,9,79,51,12
+    LTEXT           "(Feature Not Implemented)",IDC_ICON_HANDLE,66,79,143,13
+    LTEXT           "Cursor Handle:",IDC_STATIC,9,95,51,13
+    LTEXT           "(Feature Not Implemented)",IDC_CURSOR_HANDLE,66,95,143,13
+    LTEXT           "Bkgnd Brush:",IDC_STATIC,9,114,51,12
+    LTEXT           "(Feature Not Implemented)",IDC_BKGND_BRUSH,66,114,143,11
+    LTEXT           "The selected window is either closed or invalid. Please make sure that the application is running.",IDC_INVALID_WINDOW,55,48,153,40,NOT WS_VISIBLE
+END
+
+IDD_DLLLIST DIALOGEX 0, 0, 186, 158
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Depends..."
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,139,50,14
+    LISTBOX         IDC_DLL_LIST,7,7,172,126,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "&Copy",IDC_COPYLIST,72,139,50,14
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 211, 127
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_PALETTEWINDOW
+CAPTION "About"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC1,13,14,21,20
+    LTEXT           "InfoViewer for Windows\nProgrammed by Mahasri Kalavala (Ver 1.0)\nDeveloped in 1998, Stil works!.",IDC_STATIC2,44,11,156,31
+    GROUPBOX        "Reach me at",IDC_STATIC3,7,50,193,48
+    CTEXT           "https://github.com/skalavala",IDC_EMAIL_ID,13,61,180,10
+    CTEXT           "Visit my home page at ",IDC_STATIC,14,72,179,10
+    CTEXT           "https://github.com/skalavala",IDC_HOMEPAGE_URL,44,83,124,8,SS_NOTIFY | SS_CENTERIMAGE
+    DEFPUSHBUTTON   "Rocks!",IDOK,146,107,54,14,BS_CENTER | BS_VCENTER | WS_GROUP
+    PUSHBUTTON      "Sucks!",ID_VERY_BAD,7,107,54,14,BS_CENTER | BS_VCENTER | WS_GROUP | NOT WS_TABSTOP
+    CONTROL         136,IDC_AUTHOR,"Static",SS_BITMAP | NOT WS_VISIBLE,66,32,79,62
+END
+
+IDD_FINDWINDOW DIALOGEX 0, 0, 178, 149
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE
+CAPTION "Find Window"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_HWND,78,89,85,13,ES_LOWERCASE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,117,126,55,16
+    ICON            IDI_FRAME_CIRCLE,IDC_FRAME_ICON,123,53,20,20
+    LTEXT           "Drag the Finder Tool over a window to select it, then release the mouse button. or enter HWND in the following Edit control.",IDC_STATIC_TEXT,12,10,153,26
+    CONTROL         "&Hide Parent",IDC_HIDE_SPY,"Button",BS_AUTOCHECKBOX | BS_LEFT | BS_VCENTER | WS_TABSTOP,12,53,54,17
+    LTEXT           "Handle:",IDC_STATIC,12,89,60,12,SS_SUNKEN
+    PUSHBUTTON      "Cancel",IDCANCEL,53,126,55,16
+    EDITTEXT        IDC_CLASS_NAME,78,104,85,12,ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Class Name:",IDC_STATIC,12,104,60,12,SS_SUNKEN
+    GROUPBOX        "Hint",IDC_STATIC,4,0,168,42
+    GROUPBOX        "Finder Tool",IDC_STATIC,4,43,168,35
+    GROUPBOX        "Selected Window",IDC_STATIC,4,80,168,42
+END
+
+IDD_MSGOPTIONS DIALOGEX 0, 0, 302, 222
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Messages Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_HWND,217,19,68,13,ES_AUTOHSCROLL
+    GROUPBOX        "Message Groups",IDC_STATIC,7,74,284,89
+    CONTROL         "&Button",IDC_BUTTON_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,84,50,10
+    CONTROL         "&ListBox",IDC_LISTBOX_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,97,50,10
+    CONTROL         "&ScrollBar",IDC_SCROLLBAR_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,110,50,10
+    CONTROL         "C&omboBox",IDC_COMBOBOX_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,122,50,10
+    CONTROL         "&EditField",IDC_EDIT_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,135,50,10
+    CONTROL         "H&eader",IDC_HEADER_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,148,50,10
+    CONTROL         "&UnKnown",IDC_UNKNOWN_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,77,148,57,10
+    CONTROL         "&TreeView",IDC_TREEVIEW_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,77,84,57,10
+    CONTROL         "L&istView",IDC_LISTVIEW_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,77,97,57,10
+    CONTROL         "DialogBo&x",IDC_DIALOGBOX_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,77,110,57,10
+    CONTROL         "ToolTi&p",IDC_TOOLTIP_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,77,122,57,10
+    CONTROL         "Spi&n",IDC_SPIN_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,77,135,57,10
+    CONTROL         "Ani&mate",IDC_ANIMATE_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,206,122,59,10
+    CONTROL         "&WM_USER",IDC_USER_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,206,135,59,10
+    CONTROL         "TabCntr&l",IDC_TABCTRL_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,84,59,10
+    CONTROL         "Trac&kBar",IDC_TRACKBAR_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,97,59,10
+    CONTROL         "&StatusBar",IDC_STATUSBAR_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,110,59,10
+    CONTROL         "Pro&gress",IDC_PROGRESS_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,122,59,10
+    CONTROL         "&HotKey",IDC_HOTKEY_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,135,59,10
+    CONTROL         "D&DE",IDC_DDE_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,206,97,59,10
+    CONTROL         "WM_* Msg",IDC_MOUSEMOVE_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,206,110,59,10
+    CONTROL         "Tool&Bar",IDC_TOOLBAR_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,206,84,59,10
+    GROUPBOX        "&Spy on",IDC_STATIC,7,164,284,32
+    CONTROL         "&Parent",IDC_PARENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,47,176,41,9
+    CONTROL         "&Child",IDC_CHILD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,176,34,9
+    CONTROL         "Same &Thread",IDC_SAMETHREAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,95,176,60,9
+    CONTROL         "Same &Process",IDC_SAMEPROCESS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,176,59,9
+    CONTROL         "&Whole System",IDC_WHOLE_SYSTEM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,222,176,63,9
+    CONTROL         "Select &All",IDC_SELECT_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,201,59,14
+    DEFPUSHBUTTON   "OK",IDOK,179,201,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,241,201,50,14
+    GROUPBOX        "Selected Window Properties",IDC_STATIC,165,7,126,63
+    LTEXT           "Handle:",IDC_STATIC,170,19,39,13
+    LTEXT           "Class Name:",IDC_STATIC,169,36,40,13
+    LTEXT           "PID:",IDC_STATIC,170,55,21,9
+    LTEXT           "",IDC_PROCESSID,192,55,34,9
+    LTEXT           "TID:",IDC_STATIC,231,54,18,9
+    LTEXT           "",IDC_THREADID,252,54,34,9
+    GROUPBOX        "Window Finder Tool",IDC_STATIC,7,7,154,63
+    CONTROL         "&Hide Parent",IDC_HIDE_SPY,"Button",BS_AUTOCHECKBOX | BS_LEFT | BS_VCENTER | WS_TABSTOP,93,49,63,17
+    LTEXT           "Drag the Finder Tool over a window to select it, then release the mouse button. or enter HWND in the following Edit control.",IDC_STATIC_TEXT,14,16,144,26
+    ICON            IDI_FRAME_CIRCLE,IDC_FRAME_ICON,57,46,20,20
+    ICON            IDR_INFOVITYPE,IDC_STATIC,14,46,20,20
+    EDITTEXT        IDC_CLASSNAME,217,38,68,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MAX_LINES,80,203,36,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Lines maximum",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,120,203,53,12
+    CONTROL         "KeyBoa&rd",IDC_KEYBOARD_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,148,59,10
+END
+
+IDD_SPLASH DIALOGEX 0, 0, 233, 105
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         162,IDC_SPLASH_BMP,"Static",SS_BITMAP,4,6,230,104
+END
+
+IDD_PROCESS_MEM_INFO DIALOGEX 0, 0, 249, 175
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Memory"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Page Fault Count:",IDC_STATIC,8,3,119,14
+    LTEXT           "",IDC_PAGEFAULTCOUNT,130,3,112,13
+    LTEXT           "Peak Working Set Size:",IDC_STATIC,8,22,119,14
+    LTEXT           "",IDC_PEAKWORKINGSETSIZE,130,22,112,13
+    LTEXT           "Working Set Size:",IDC_STATIC,8,41,119,14
+    LTEXT           "",IDC_WORKINGSETSIZE,130,41,112,13
+    LTEXT           "Quota Peak Paged Pool Usage:",IDC_STATIC,8,60,119,14
+    LTEXT           "",IDC_QUOTAPEAKPAGEDPOOLUSAGE,130,60,112,13
+    LTEXT           "Quota Paged Pool Usage:",IDC_STATIC,8,79,119,14
+    LTEXT           "",IDC_QUOTAPAGEDPOOLUSAGE,130,80,112,13
+    LTEXT           "Quota Peak Non Paged Pool Usage:",IDC_STATIC,8,98,119,14
+    LTEXT           "",IDC_QUOTAPEAKNONPAGEDPOOLUSAGE,130,99,112,13
+    LTEXT           "Quota Non Paged Pool Usage:",IDC_STATIC,8,116,119,14
+    LTEXT           "",IDC_QUOTANONPAGEDPOOLUSAGE,130,118,112,13
+    LTEXT           "Page File Usage:",IDC_STATIC,8,135,119,14
+    LTEXT           "",IDC_PAGEFILEUSAGE,130,137,112,13
+    LTEXT           "Peak Page File Usage:",IDC_STATIC,8,154,119,14
+    LTEXT           "",IDC_PEAKPAGEFILEUSAGE,130,155,112,13
+    LTEXT           "The selected window is either closed or invalid. Please make sure that the application is running.",IDC_INVALID_WINDOW,55,48,153,40,NOT WS_VISIBLE
+END
+
+IDD_NTPROCESSES DIALOG  0, 0, 189, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Process"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_MODULENAME,94,48,83,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Process ID:",IDC_STATIC,18,15,58,14
+    LTEXT           "",IDC_PROCESS_ID,94,15,83,14
+    LTEXT           "Thread ID:",IDC_STATIC,18,34,58,14
+    LTEXT           "",IDC_THREAD_ID,94,34,83,14
+    LTEXT           "Module Name:",IDC_STATIC,18,52,58,14
+    LTEXT           "The selected window is either closed or invalid. Please make sure that the application is running.",IDC_INVALID_WINDOW,55,48,153,40,NOT WS_VISIBLE
+END
+
+IDD_PROCESS_INFO DIALOGEX 0, 0, 286, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Process Information"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,228,157,50,14
+    GROUPBOX        "Process Times",IDC_STATIC,126,63,153,52
+    GROUPBOX        "Process Information",IDC_STATIC,7,7,117,55
+    LTEXT           "Creation Time:",IDC_STATIC,132,73,60,8
+    LTEXT           "Exit Time:",IDC_STATIC,132,83,60,8
+    LTEXT           "Kernel Time:",IDC_STATIC,132,93,60,8
+    LTEXT           "User Time:",IDC_STATIC,132,103,60,8
+    LTEXT           "Process ID:",IDC_STATIC,15,17,60,8
+    LTEXT           "Module Name:",IDC_STATIC,132,17,60,8
+    LTEXT           "Priority Base:",IDC_STATIC,15,27,60,8
+    LTEXT           "Thread Count:",IDC_STATIC,15,37,60,8
+    LTEXT           "Handles Count:",IDC_STATIC,15,47,60,8
+    GROUPBOX        "IO Counters",IDC_STATIC,7,63,117,91
+    LTEXT           "Read Operations:",IDC_STATIC,15,76,60,8
+    LTEXT           "Write Operations:",IDC_STATIC,15,88,60,8
+    LTEXT           "Other Operations:",IDC_STATIC,15,100,60,8
+    LTEXT           "Read Transfers:",IDC_STATIC,15,112,60,8
+    LTEXT           "Write Transfers:",IDC_STATIC,15,124,60,8
+    LTEXT           "Other Transfers",IDC_STATIC,15,136,60,8
+    GROUPBOX        "GUI Resources Usage",IDC_STATIC,126,119,152,35
+    LTEXT           "Current Priority:",IDC_STATIC,132,30,53,8
+    LTEXT           "GDI Objects:",IDC_STATIC,132,128,60,8
+    LTEXT           "User Objects:",IDC_STATIC,132,139,60,8
+    GROUPBOX        "Other Information",IDC_STATIC,126,7,152,54
+    LTEXT           "Reference Count:",IDC_STATIC,132,43,58,8
+    PUSHBUTTON      "&Refresh",IDC_BTN_REFRESH,171,157,50,14
+    EDITTEXT        IDC_PROCESS_ID,78,13,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_PRIORITY_BASE,78,24,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_THREAD_COUNT,78,36,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_HANDLE_COUNT,78,48,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_MODULE_NAME,190,14,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_PRIORITY,190,28,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_CURRENT_USAGE,190,43,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_GDI_OBJECTS_COUNT,189,128,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_USER_OBJECTS_COUNT,189,139,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_CREATION_TIME,189,68,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_EXIT_TIME,189,79,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_KERNEL_TIME,189,90,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_USER_TIME,189,101,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_READ_OPERATIONS,78,76,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_WRITE_OPERATIONS,78,88,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_OTHER_OPERATIONS,78,100,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_READ_TRANSFERS,78,112,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_WRITE_TRANSFERS,78,124,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_OTHER_TRANSFERS,78,136,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+IDD_PROCESS_INFO_FORM DIALOGEX 0, 0, 289, 158
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Process Times",IDC_STATIC,130,60,152,54
+    GROUPBOX        "Process Information",IDC_STATIC,7,3,117,56
+    LTEXT           "Creation Time:",IDC_STATIC,136,71,60,8
+    LTEXT           "Exit Time:",IDC_STATIC,136,81,60,8
+    LTEXT           "Kernel Time:",IDC_STATIC,136,91,60,8
+    LTEXT           "User Time:",IDC_STATIC,136,100,60,8
+    LTEXT           "Process ID:",IDC_STATIC,15,14,60,8
+    LTEXT           "Module Name:",IDC_STATIC,136,14,60,8
+    LTEXT           "Priority Base:",IDC_STATIC,15,24,60,8
+    LTEXT           "Thread Count:",IDC_STATIC,15,34,60,8
+    LTEXT           "Handles Count:",IDC_STATIC,15,43,60,8
+    GROUPBOX        "IO Counters",IDC_STATIC,7,60,117,91
+    LTEXT           "Read Operations:",IDC_STATIC,15,74,60,8
+    LTEXT           "Write Operations:",IDC_STATIC,15,86,60,8
+    LTEXT           "Other Operations:",IDC_STATIC,15,98,60,8
+    LTEXT           "Read Transfers:",IDC_STATIC,15,110,60,8
+    LTEXT           "Write Transfers:",IDC_STATIC,15,122,60,8
+    LTEXT           "Other Transfers",IDC_STATIC,15,134,60,8
+    GROUPBOX        "GUI Resources Usage",IDC_STATIC,130,116,152,35
+    LTEXT           "Current Priority:",IDC_STATIC,136,27,53,8
+    LTEXT           "GDI Objects:",IDC_STATIC,136,127,60,8
+    LTEXT           "User Objects:",IDC_STATIC,136,138,60,8
+    GROUPBOX        "Other Information",IDC_STATIC,130,3,152,56
+    LTEXT           "Reference Count:",IDC_STATIC,136,40,58,8
+    EDITTEXT        IDC_PROCESS_ID,77,10,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_PRIORITY_BASE,77,21,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_THREAD_COUNT,77,33,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_HANDLE_COUNT,77,45,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_MODULE_NAME,194,11,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_PRIORITY,194,25,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_CURRENT_USAGE,194,40,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_GDI_OBJECTS_COUNT,194,126,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_USER_OBJECTS_COUNT,194,137,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_CREATION_TIME,194,66,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_EXIT_TIME,194,76,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_KERNEL_TIME,194,87,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_USER_TIME,194,99,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_READ_OPERATIONS,77,74,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_WRITE_OPERATIONS,77,86,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_OTHER_OPERATIONS,77,98,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_READ_TRANSFERS,77,110,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_WRITE_TRANSFERS,77,122,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_PROCESS_OTHER_TRANSFERS,77,134,43,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+IDD_THREADPROPVIEW DIALOGEX 0, 0, 192, 126
+STYLE DS_ABSALIGN | DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Thread Times",IDC_STATIC,7,59,178,60
+    GROUPBOX        "Thread Information",IDC_STATIC,7,3,178,55
+    LTEXT           "Creation Time:",IDC_STATIC,15,69,60,8
+    LTEXT           "Exit Time:",IDC_STATIC,15,81,60,8
+    LTEXT           "Kernel Time:",IDC_STATIC,15,92,60,8
+    LTEXT           "User Time:",IDC_STATIC,15,104,60,8
+    LTEXT           "Thread ID:",IDC_STATIC,15,14,60,8
+    LTEXT           "Thread State:",IDC_STATIC,15,24,60,8
+    LTEXT           "Wait Reason:",IDC_STATIC,15,35,60,8
+    LTEXT           "Context Switches:",IDC_STATIC,15,46,60,8
+    EDITTEXT        IDC_THREAD_ID,97,9,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_THREAD_STATE,97,21,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_THREAD_WAIT_REASON,97,32,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_THREAD_CONTEXT_SWITCHES,97,44,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_THREAD_CREATION_TIME,97,68,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_THREAD_EXIT_TIME,97,80,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_THREAD_KERNEL_TIME,97,91,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_THREAD_USER_TIME,97,103,86,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+IDD_DIALOGEX DIALOG  0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,129,26,50,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_95PROCESSES, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 177
+        VERTGUIDE, 18
+        VERTGUIDE, 76
+        VERTGUIDE, 94
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 128
+        HORZGUIDE, 29
+        HORZGUIDE, 48
+        HORZGUIDE, 67
+        HORZGUIDE, 86
+        HORZGUIDE, 105
+    END
+
+    IDD_FINDTEXT, DIALOG
+    BEGIN
+        VERTGUIDE, 9
+        VERTGUIDE, 89
+        VERTGUIDE, 98
+        VERTGUIDE, 155
+        VERTGUIDE, 215
+        HORZGUIDE, 37
+        HORZGUIDE, 61
+        HORZGUIDE, 78
+        HORZGUIDE, 85
+    END
+
+    IDD_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_CLASS, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 209
+        VERTGUIDE, 177
+        TOPMARGIN, 9
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_FINDWINDOW, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_MSGOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_PROCESS_MEM_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 242
+        VERTGUIDE, 127
+        VERTGUIDE, 130
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_NTPROCESSES, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 177
+        VERTGUIDE, 18
+        VERTGUIDE, 76
+        VERTGUIDE, 94
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 128
+        HORZGUIDE, 29
+        HORZGUIDE, 48
+        HORZGUIDE, 66
+        HORZGUIDE, 86
+        HORZGUIDE, 105
+    END
+
+    IDD_PROCESS_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_PROCESS_INFO_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_THREADPROPVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_DIALOGEX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CIRCLE              CURSOR                  "res\\Circle.cur"
+IDC_HAND                CURSOR                  "res\\hand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_AUTHOR_BITMAP       BITMAP                  "res\\ninja.bmp"
+IDB_SPLASH_BMP          BITMAP                  "RES\\splash.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      IDM_FILE_NEW_WINDOWS_VIEW
+    BUTTON      IDM_FILE_NEW_MESSAGES_VIEW
+    BUTTON      IDM_FILE_NEW_PROCESSES_VIEW
+    BUTTON      IDM_FILE_NEW_PROCESSES_TREE
+    SEPARATOR
+    BUTTON      IDM_REFRESH
+    BUTTON      IDM_SHOWPROPERTIES
+    BUTTON      IDM_HIGHLIGHT
+    BUTTON      IDM_FIND_WINDOW
+    BUTTON      IDM_FIND_TEXT
+    SEPARATOR
+    BUTTON      IDD_ABOUTINFOVIEWER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_APPS,        ID_SHIFT_F10,           VIRTKEY, NOINVERT
+    VK_F10,         ID_SHIFT_F10,           VIRTKEY, SHIFT, NOINVERT
+    VK_DELETE,      IDM_CLEAR_VIEW,         VIRTKEY, NOINVERT
+    VK_MULTIPLY,    IDM_EXPAND_ALL,         VIRTKEY, CONTROL, NOINVERT
+    "M",            IDM_FILE_NEW_MESSAGES_VIEW, VIRTKEY, CONTROL, NOINVERT
+    "E",            IDM_FILE_NEW_PROCESSES_TREE, VIRTKEY, CONTROL, NOINVERT
+    "R",            IDM_FILE_NEW_PROCESSES_VIEW, VIRTKEY, CONTROL, NOINVERT
+    "N",            IDM_FILE_NEW_WINDOWS_VIEW, VIRTKEY, CONTROL, NOINVERT
+    "X",            IDM_FILE_QUIT,          VIRTKEY, ALT, NOINVERT
+    VK_F3,          IDM_FIND_TEXT,          VIRTKEY, NOINVERT
+    "F",            IDM_FIND_WINDOW,        VIRTKEY, CONTROL, NOINVERT
+    "G",            IDM_GET_TEXT,           VIRTKEY, CONTROL, NOINVERT
+    "H",            IDM_HIGHLIGHT,          VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          IDM_REFRESH,            VIRTKEY, NOINVERT
+    VK_RETURN,      IDM_SHOWPROPERTIES,     VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "skalavala inc."
+            VALUE "FileDescription", "InfoViewer For Windows Family"
+            VALUE "FileVersion", "1, 0, 0, 0"
+            VALUE "InternalName", "InfoView"
+            VALUE "LegalCopyright", "Mahasri Kalavala, Copyright (C) 1998"
+            VALUE "OriginalFilename", "INFOVIEW.EXE"
+            VALUE "ProductName", "InfoViewer for Windows Family"
+            VALUE "ProductVersion", "1, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// INFOHOOKDLL
+//
+
+IDR_INFOHOOKDLL1        INFOHOOKDLL             "InfoHook\\Debug\\InfoHook.dll"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    IDS_KERNEL_DLL          "kernel.dll"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Microsoft Windows InfoViewer"
+    IDR_INFOVITYPE          "\nInfoVi\nInfoVi\n\n\nInfoView.Document\nInfoVi Document"
+    IDD_ABOUTINFOVIEWER     "Displays about box\nAbout Author"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "InfoView"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_HIGHLIGHT           "Highlights the selected window\nHighlight"
+    IDM_SHOWPROPERTIES      "Properties of the selected window\nProperties"
+    IDM_ABOUTAUTHOR         "About..."
+    IDM_REFRESH             "Refreshes the window\nRefresh"
+    IDM_FIND_WINDOW         "Displays the Find window dialog\nFind window"
+    IDM_GET_PASSWORD        "Displays the text from the selected control\nGet Text"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_EXPAND_ALL          "Displays all levels of all trees."
+    ID_MENUITEM32788        "Collapses all levels of the selected  tree"
+    IDM_EXPAND_ONE_LEVEL    "Displays another level of the selected tree."
+    IDM_EXPAND_BRANCH       "Displays all levels of selected tree."
+    IDM_COLLAPSE            "Displays all levels of selected tree."
+    IDM_FILE_NEW_WINDOWS    "Opens a new Windows view."
+    IDM_FILE_PROCESS_VIEW   "Opens a new Processes View.\nProcesses"
+    IDM_FILE_THREADS_VIEW   "Opens a new Threads View."
+    IDM_FILE_NEW_WINDOWS_VIEW "Opens new Windows view.\nWindows"
+    IDM_FIND_TEXT           "Finds the given text in the tree control.\nFind Text"
+    IDM_SHOW_DLLS           "Shows the dependencies"
+    IDM_FILE_NEW_MESSAGES_VIEW "Opens new Messages View\nMessages."
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_CLEAR_VIEW          "Clears the view."
+    IDM_STOP_MESSAGES       "Stop Messages."
+    IDM_START_STOP_MESSAGES "Starts/Stop Messages."
+    IDM_FIND_CAPTION        "Finds the given Text/Caption in the Tree control."
+    ID_UTILS_CREATESHORTCUTONDESKTOP "Creates Shortcut on Desktop."
+    IDM_GET_TEXT            "Gets the text of selected window (supposed to get any type of information)."
+    ID_POPUPMENU_COPYTOCLIPBOARD_WINDOWTEXT 
+                            "Copies the window caption/text assigned to the selected window."
+    ID_COPY_WINDOWTEXT      "Copies the window Text of the selected window to clipboard."
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_BUTTON_MSG          "Button Messages"
+    IDC_LISTBOX_MSG         "ListBox Messages"
+    IDC_SCROLLBAR_MSG       "ScrollBar Messages"
+    IDC_COMBOBOX_MSG        "ComboBox Messages"
+    IDC_EDIT_MSG            "EditBox Messages"
+    IDC_TREEVIEW_MSG        "TreeView Messages"
+    IDC_LISTVIEW_MSG        "ListView Messages"
+    IDC_DIALOGBOX_MSG       "Dialog Messages"
+    IDC_TOOLTIP_MSG         "ToolTip Messages"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SPIN_MSG            "Spin Control Messages"
+    IDC_TABCTRL_MSG         "Tab Control Messages"
+    IDC_TRACKBAR_MSG        "TrackBar Control Messages"
+    IDC_STATUSBAR_MSG       "Status Bar Messages"
+    IDC_PROGRESS_MSG        "ProgressBar Messages"
+    IDC_HOTKEY_MSG          "HotKey Messages"
+    IDC_HEADER_MSG          "Header control Messages"
+    IDC_ANIMATE_MSG         "Animate Control Messages"
+    IDC_DDE_MSG             "DDE Messages"
+    IDC_UNKNOWN_MSG         "Unknown Messages"
+    IDC_USER_MSG            "User Defined Messages"
+    IDC_MOUSEMOVE_MSG       "Window Messages (Mouse, keyboard...etc)"
+    IDC_TOOLBAR_MSG         "ToolBar Messages"
+    IDC_PARENT              "Parent Window's Messages"
+    IDC_CHILD               "Selected Window's Messages"
+    IDC_SAMETHREAD          "Messages of Same Thread"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SAMEPROCESS         "Messages of Same Process"
+    IDC_WHOLE_SYSTEM        "Shows Entire system's messages"
+    IDC_SELECT_ALL          "Selects all Message Groups"
+    IDC_PROCESSID           "Process Id of the selected window"
+    IDC_THREADID            "Thread Id of the selected window"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_HIDE_SPY            "Hides the Infoviewer Main Window"
+    IDC_HWND                "Enter HWND or Select the window using Finder Tool"
+    IDC_CLASSNAME           "Class Name of the selected Wwindow"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_FRAME_ICON          "Drag the Circular image and Find window"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_POPUPMENU_COPYTOCLIPBOARD_CLASSNAME 
+                            "Copies the classname of the selected window."
+    ID_COPY_CLASSNAME       "Copies the class name of the selected window to clipboard."
+    ID_COPY_HWND            "Copies the HWND of the selected window to clipboard."
+    ID_COPY_ENTIRETEXT      "Copies the Entire Text of the selected tree item to clipboard."
+    IDM_FILE_NEW_PROCESSES_VIEW 
+                            "Shows the currently running processes in system.\nProcesses"
+    IDM_FILE_PROCESS_THREADS 
+                            "Shows the list of processes currently running on the system.\nProcesses and Threads."
+    ID_DFGDF_GHHGF          "Kills the selected Process."
+    ID_PROCESSES_PROPERTIES "Shows the properties of a selected process."
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_KILL_PROCESS        "Kills the selected process."
+    ID_SHOW_ONLY_THREADS    "Shows all threads running in the system."
+    IDM_ABOUT_INFOVIEW      "Shows the Infoviewer Splash screen."
+    IDM_CHANGE_FONT         "changes font."
+    IDM_SHOWPROCESS_ID      "Shows processes ID in the Tree view."
+    ID_OPTIONS_SHOWTHREADID "Shows Thread ID in the tree view."
+    IDM_SHOW_THREAD_ID      "Shows Thread ID in the tree view."
+    IDM_SHOW_CLASSNAME      "Shows class name in the tree view."
+    IDM_SHOW_PROCESS_ID     "Shows Process ID in the tree view."
+    ID_OPTIONS_ALWAYSONTOP  "Keep the window on the top of z-order."
+    ID_SHOW_WINDOWCAPTION   "Shows the window caption."
+    ID_WINDOWSVIEW_PROPERTIES "Shows the properties of the selected message."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SHOW_SHOWHIDDENWINDOWS "Shows the Hidden Windows"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_SPY_SHOW            "Shows or hides main window"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_FILE_NEW_PROCESSES_TREE 
+                            "Shows currently running processes and Threads"
+END
+
+STRINGTABLE 
+BEGIN
+    32885                   "Closes all the active windows.\\Close active windows"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\InfoView.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

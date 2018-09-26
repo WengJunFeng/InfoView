@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoHook", "InfoHook\InfoHook.vcxproj", "{6E387253-72FE-452A-9605-FCFF1DFFFF30}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfoView", "InfoView.vcxproj", "{A660DADF-E027-499A-9AA0-7D29F0F56DB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E387253-72FE-452A-9605-FCFF1DFFFF30}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6E387253-72FE-452A-9605-FCFF1DFFFF30}.Debug|Win32.Build.0 = Debug|Win32
+		{6E387253-72FE-452A-9605-FCFF1DFFFF30}.Release|Win32.ActiveCfg = Release|Win32
+		{6E387253-72FE-452A-9605-FCFF1DFFFF30}.Release|Win32.Build.0 = Release|Win32
+		{A660DADF-E027-499A-9AA0-7D29F0F56DB7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A660DADF-E027-499A-9AA0-7D29F0F56DB7}.Debug|Win32.Build.0 = Debug|Win32
+		{A660DADF-E027-499A-9AA0-7D29F0F56DB7}.Release|Win32.ActiveCfg = Release|Win32
+		{A660DADF-E027-499A-9AA0-7D29F0F56DB7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16129D61-DF3F-446E-A591-6606779B78DD}
+	EndGlobalSection
+EndGlobal

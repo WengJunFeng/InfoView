@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{904ef5aa-7875-4b9c-8fa9-8edb253fa960}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Views">
+      <UniqueIdentifier>{a829de6c-fa02-406a-b98e-52fc269de190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PropertySheet">
+      <UniqueIdentifier>{8db91dc3-5808-4ffa-a326-c59586755494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dialogs">
+      <UniqueIdentifier>{2fa6c022-6b71-4153-966d-5073cc0a7947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Windows">
+      <UniqueIdentifier>{217b970f-364e-4e27-814e-bc9c42487dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{9236d6dd-e362-4403-9fa4-0d3fa50b35f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controls">
+      <UniqueIdentifier>{85deed3e-9150-434f-800b-2ebbdbcaa55e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AppFiles">
+      <UniqueIdentifier>{530caf9d-3e50-4263-8e9e-fbaf674a3b91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{db8e7e25-a799-4a45-a42d-42fe9a3f8141}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c475e680-acb0-4653-ad31-78199efbdba5}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MessagesView.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessesView.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessPropView.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessTreeView.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPropView.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadsListView.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsView.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="95ProcessPage.cpp">
+      <Filter>Source Files\PropertySheet</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassPage.cpp">
+      <Filter>Source Files\PropertySheet</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralPage.cpp">
+      <Filter>Source Files\PropertySheet</Filter>
+    </ClCompile>
+    <ClCompile Include="NTProcessPage.cpp">
+      <Filter>Source Files\PropertySheet</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessMemInfo.cpp">
+      <Filter>Source Files\PropertySheet</Filter>
+    </ClCompile>
+    <ClCompile Include="StylesPage.cpp">
+      <Filter>Source Files\PropertySheet</Filter>
+    </ClCompile>
+    <ClCompile Include="TabSheet.cpp">
+      <Filter>Source Files\PropertySheet</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsPage.cpp">
+      <Filter>Source Files\PropertySheet</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutInfoViewer.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogEx.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLListDlg.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="FindTxtDialog.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="FindWindow.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgOptionsDlg.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessInfoDlg.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashDialog.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="ExplorerWnd.cpp">
+      <Filter>Source Files\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="95Processes.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="DllListSizer.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoUtil.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="NTProcesses.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="PdhUtil.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Sizer.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="3DTEXT.CPP">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonSubClass.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="CFlatBar.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="MyEditCtrl.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="MyListCtrl.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticEx.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoView.cpp">
+      <Filter>Source Files\AppFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoViewDoc.cpp">
+      <Filter>Source Files\AppFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files\AppFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowInfo.cpp">
+      <Filter>Source Files\AppFiles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3DTEXT.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="95Processes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="95ProcessPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutInfoViewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonSubClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLListDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DllListSizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExplorerWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FindWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoViewDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyEditCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyListCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NTProcesses.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NTProcessPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PdhUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessesView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessInfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessMemInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessPropView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessTreeView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Psapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPropView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadsListView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\classes.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Clsdfold.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\dllicon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Frame.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\FrameCircle.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\general.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\InfoView.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\InfoViewDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Openfold.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\processes.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\splash.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\styles.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\windows.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ninja.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Circle.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Res\hand.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\InfoView.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="InfoHook\Debug\InfoHook.dll" />
+    <None Include="VTune\InfoView.vpj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="InfoView.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="InfoHook\Debug\InfoHook.lib" />
+  </ItemGroup>
+</Project>

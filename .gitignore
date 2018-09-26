@@ -3,3 +3,16 @@
 ################################################################################
 
 *.db
+/Debug
+/InfoHook/Release
+/InfoHook/Debug/InfoHook.tlog/link.write.1.tlog
+/InfoHook/Debug/InfoHook.tlog/link.read.1.tlog
+/InfoHook/Debug/InfoHook.tlog/link.command.1.tlog
+/InfoHook/Debug/InfoHook.tlog/InfoHook.write.1u.tlog
+/InfoHook/Debug/InfoHook.tlog/InfoHook.lastbuildstate
+/InfoHook/Debug/InfoHook.tlog/CL.write.1.tlog
+/InfoHook/Debug/InfoHook.tlog/CL.read.1.tlog
+/InfoHook/Debug/InfoHook.tlog/CL.command.1.tlog
+/InfoHook/Debug
+/Release
+/.vs/InfoView/v15
